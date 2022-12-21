@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      input {
+        outline: none;
+      }
+
+
+      input:focus {
+        border: 2px solid red;
+      }
+
+      input[type='text'] {
+        color: blue;
+      }
+
+      input[type='radio']+label {
+        color: red;
+      }
+
+
+      h1+p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>label</h1>
+    <p>label</p>
+
+    <h1>Contact Me</h1>
+    <form action="mailto:rabyn900@gmail.com" method="post" enctype="text/plain">
+      <label for="name">YourName: </label>
+      <input type="text" name="name" id="name" placeholder="name">
+      <br><br>
+      <label for="mail">YourEmail: </label>
+      <input type="email" name="mail" id="" placeholder="email" required>
+      <br> <br>
+      <label for="gender">Genders:</label>
+
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+      <br><br>
+      <textarea name="message" id="" cols="40" rows="20" placeholder="type message"></textarea>
+      <br> <br>
+
+
+
+      <label for="gen">Genders:</label>
+
+      <input type="checkbox" name="gender1" id="male" value="male">
+      <label for="male">Male</label>
+
+      <input type="checkbox" name="gender1" id="female" value="female">
+      <label for="female">Female</label>
+      <br><br>
+      <textarea name="message" id="" cols="40" rows="20" placeholder="type message"></textarea>
+      <br> <br>
+
+
+
+      <label for="c">Country</label>
+      <select name="country" id="c">
+        <option value="select">Select your country </option>
+        <option value="nepal">Nepal</option>
+        <option value="china">China</option>
+        <option value="india">India</option>
+      </select>
+      <br> <br>
+      <input type="submit" value="Submit">
+
+
+    </form>
+
+
+
+
+  </body>
+
+</html>
