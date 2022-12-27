@@ -1,1 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --commom-color: #1E293B;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+img {
+  width: 100%;
+  /* height: auto; */
+}
+
+.header {
+  background-color: var(--commom-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  align-items: baseline;
+}
+
+.header__title {}
+
+.header ul {
+  display: flex;
+}
+
+
+.showcase {
+  background-color: var(--commom-color);
+  color: white;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  height: 300px;
+  padding: 15px 15px;
+  /* align-items: center */
+}
+
+.showcase .info {
+  padding-top: 70px;
+  line-height: 2rem;
+}
+
+.showcase input {
+  width: 40%;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.showcase button {
+  background-color: aqua;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.showcase button:hover {
+  background-color: black;
+  color: white;
+}
+
+.feature-section {
+  margin-top: 4%;
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-section .section {
+  text-align: center;
+}
+
+.info {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+}
+
+.info h3 {
+  padding: 10px 0;
+  color: var(--commom-color);
+}
+
+.info p {
+  text-align: justify;
+}
